@@ -31,7 +31,8 @@ func synthesizeSsml(ssml string) error {
 		},
 		Voice: &texttospeechpb.VoiceSelectionParams{
 			LanguageCode: "ja-JP",
-			SsmlGender:   texttospeechpb.SsmlVoiceGender_FEMALE,
+			Name:         "ja-JP-Wavenet-D",
+			SsmlGender:   texttospeechpb.SsmlVoiceGender_NEUTRAL,
 		},
 		AudioConfig: &texttospeechpb.AudioConfig{
 			AudioEncoding: texttospeechpb.AudioEncoding_MP3,
