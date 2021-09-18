@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>TTSWEB</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      body * {
+          margin: 0;
+          padding: 0;
+      }
+      h1 {
+          font-size: 1em;
+          margin-bottom: 0.5em;
+      }
+      #ssmlText {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 0.5em;
+      }
+      button#synthesizeButton {
+        display: block;
+        padding: 4px;
+        margin-bottom: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>TextToSpeech Web</h1>
+    <form id="ssml">
+      <textarea id="ssmlText" name="ssml">
+<speak>
+この出力音声はSSMLを使用しています。
+</speak></textarea
+      >
+    </form>
+    <button id="synthesizeButton">音声合成</button>
+    <audio id="audio" controls src="/synthesize.mp3"></audio>
+    <script src="common.js"></script>
+  </body>
+</html>
